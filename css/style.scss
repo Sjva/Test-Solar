@@ -258,7 +258,7 @@ header{
 /*------------END header--------*/
 main{
   background-color: #fbfcfd;
-  padding: 300px 0 0 0;
+  padding: 375px 0 0 0;
 }
 /*------------Main--------*/
 //tabs
@@ -456,33 +456,13 @@ footer ul li a:hover{
   margin-top: 5px;
   overflow: hidden;
 }
-/*--------------------------media-------------------------------------------------------------------------------------*/
-@media screen and (max-width: 1440px) {
-
+/*--------------------------RU version site-------------------------------------------------------------------------------------*/
+.ru-header-polis {
+  margin-top: 208px;
 }
-@media screen and (max-width: 1199px) {
-
-
+.ru-header-title h1 {
+  margin-top: 172px;
 }
-@media screen and (max-width: 992px) {
-
-
+.ru-apps-text {
+  margin: 185px 0 0 0;
 }
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 600px) {
-
-}
-
-@media screen and (max-width: 565px) {
-
-}
-@media screen and (max-width: 500px) {
-
-}
-@media screen and (max-width: 400px) {
-
-}
-

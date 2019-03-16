@@ -21,9 +21,9 @@
         <div class="header-reg wow fadeInUp" data-wow-delay="0.5s">
             <div class="header-lang">
                 <a href="#"><img src="img/png/logo.png" width="19" height="19" alt="logo">Binotrade</a>
-                <select class="js-example-basic-single" name="state">
-                    <option value="RU" selected><a href="#">RU</a></option>
-                    <option value="EN"><a href="#">EN</a></option>
+                <select class="js-example-basic-single" name="state" onchange="window.location.href=this.options[this.selectedIndex].value">
+                    <option value="ru/">RU</option>
+                    <option value="index.html" selected>EN</option>
                 </select>
             </div>
 

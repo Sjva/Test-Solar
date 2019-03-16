@@ -2,47 +2,67 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Front-end developer</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- Подключение к поисковой системе Google and Яndex -->
+    <title>Front-end dev. Levko Viacheslav</title>
     <meta name="author" content="Левко Вячеслав">
-    <meta name="keywords" content="Портфолио, HTML, CSS, Верстальщик, Levko Viacheslav, Junior Front-end developer, front-end developer odessa, Front-end, Начинающий, HTML CSS Bootstrap сайт, Портфолио верстальщика, Одесса, Левко Вячеслав">
-    <meta name="description" content="Левко Вячеслав, Front-end developer ищет работу в Одессе. О себе: высшее образование, коммерческий опыт работы 2 года . Интересует полная зайнятость на позицию Front-end разработчик. ">
-    <meta name="yandex-verification" content="8a7e8a091582e34f">
-    <meta name="google-site-verification" content="NG35eJDfw0UTVH-j-XNZYazRYDLWgZ0Koue1sC5dvg8">
 
-    <link rel="icon" href="../img/png/logo2.png" type="image/x-icon">
-    <link rel="preload" rel="stylesheet" href="../bundle/styles/bootstrap.min.css" as="style">
-    <link rel="preload" href="../bundle/styles/bundle.css" as="style">
+    <link rel="icon" href="../img/png/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/select2.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--<link rel="stylesheet" href="bundle/styles/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="bundle/styles/bundle.css">-->
 
 </head>
 <body>
 
-<div id="wrapper">
+<div id="wrapper" class="wow fadeIn" data-wow-delay="0.3s">
     <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 my-photo">
-                    <img src="../img/png/photo.jpg" alt="foto"  class="wow fadeInUp" data-wow-delay="0.5s">
+        <div class="header-reg wow fadeInUp" data-wow-delay="0.5s">
+            <div class="header-lang">
+                <a href="#"><img src="../img/png/logo.png" width="19" height="19" alt="logo">Binotrade</a>
+                <select class="js-example-basic-single" name="state" onchange="window.location.href=this.options[this.selectedIndex].value">
+                    <option value="index.html" selected>RU</option>
+                    <option value="../index.html">EN</option>
+                </select>
+            </div>
+
+            <div class="header-login">
+                <a href="#">Трейдерам</a>
+                <a href="#">О компании </a>
+                <div class="vert-line"></div>
+                <a href="#" class="login">Войти</a>
+                <a href="#" class="signup">Зарегистрироваться</a>
+            </div>
+        </div>
+        <div class="header-title ru-header-title wow fadeIn" data-wow-delay="0.8s">
+            <h1>Простой инструмент <br>
+                для онлайн торговли</h1>
+            <p>Первая прибыль через 1 минуту</p>
+            <a href="#" class="start-trading">Начать торговать</a>
+
+            <div class="header-polis ru-header-polis">
+                <div class="header-block">
+                    <div class="header-polis-item">
+                        <img src="../img/png/hourse.png" class="wow tada" data-wow-delay="0.5s" alt="polis">
+                        <p>Оттачи выигрышную <br> стратегию на учебном <br> счете</p>
+                    </div>
+                    <div class="header-polis-item">
+                        <img src="../img/png/rocket.png" class="wow tada" data-wow-delay="0.5s" alt="rocket">
+                        <p>Торгуй с минимумом вложений <br>
+                            и получай до 95% прибыли</p>
+                    </div>
                 </div>
-                <div class="col-md-8 name">
-                    <div class="col-xl-10 name-content">
-                        <a href="../index.html" class="btn lang-btn">EN</a>
-                        <h1 class="wow fadeInUp" data-wow-delay="0.8s">Вячеслав <br><span>Левко</span></h1>
-                        <div class="prof-name">
-                            <h3 class="wow fadeInUp" data-wow-delay="1s">Front-end developer</h3>
-                            <div class="social-icons">
-                                <a href="https://www.linkedin.com/in/viacheslav-levko-7b7472138/" class="wow fadeInUp" data-wow-delay="1.1s" ><svg class="transition"><use xlink:href="../img/svg/svg.svg#linkedin"></use></svg></a>
-                                <a href="skype:https://join.skype.com/invite/bM7zzF5qm784" class="wow fadeInUp" data-wow-delay="1.2s"><svg class="transition"><use xlink:href="../img/svg/svg.svg#skype"></use></svg></a>
-                                <a href="viber://chat?number=+380636748159" class="wow fadeInUp" data-wow-delay="1.3s"><svg class="transition"><use xlink:href="../img/svg/svg.svg#viber"></use></svg></a>
-                                <a href="https://www.facebook.com/profile.php?id=100009540591794" class="wow fadeInUp" data-wow-delay="1.4s"><svg class="transition"><use xlink:href="../img/svg/svg.svg#facebook"></use></svg></a>
-                            </div>
-                        </div>
-                        <ul class="d-flex wow fadeInUp" data-wow-delay="1.3s">
-                            <li class="wow fadeInUp" data-wow-delay="1.5s">Локация <p>Одесса, Украина</p></li>
-                            <li class="wow fadeInUp" data-wow-delay="1.6s">Телефон <p><a href="tel:+380978544985">+38(097)85-44-985</a></p></li>
-                            <li class="wow fadeInUp" data-wow-delay="1.7s">Email <p><a href="mailto:slevko88@gmail.com">slevko88@gmail.com</a></p></li>
-                        </ul>
+                <div class="header-block">
+                    <div class="header-polis-item">
+                        <img src="../img/png/arrow-up.png" class="wow tada" data-wow-delay="0.5s" alt="arrow">
+                        <p>Определяй куда пойдет цена актива: <br>
+                            вверх или вниз</p>
+                    </div>
+                    <div class="header-polis-item">
+                        <img src="../img/png/pocket.png" class="wow tada" data-wow-delay="0.5s" alt="polis">
+                        <p>Выводи прибыль без ограничений <br>
+                            на карту или онлайн-кошелек </p>
                     </div>
                 </div>
             </div>
@@ -50,451 +70,154 @@
     </header>
 
     <main>
-        <div class="intro">
-            <div class="row">
-                <div class="col-md-4 intro-title">
-                    <h3>Интро</h3>
-                    <p>Немного обо мне</p>
-                </div>
-                <div class="col-md-8 intro-text">
-                    <p>
-                        Перед тем как стать программистом я долгое время работал в продажах.
-                        После этого я прошел несколько курсов по программированию, это Main Academy - Front-end разработчик 7 месяцев и
-                        общий курс по разработке в DataArt IT School, где уже в составе комманд на протяжений 4 месяцев разрабатывали свой проект остнованый на google картах.
-                    </p>
-                    <p>
-                        И с ноября 2017 года работаю в web студий  на позиций Front-end developer.
-                        Где за время работы сверстал не один десяток проектов на разный темы, это платформа для торговлей биткоинами,
-                        проект связанные с недвижимостью, платформа для предатсовления скидок на товары, продажей топлива и др.
-                        Ко всем проектам прменял требования по адаптивности, кроссбраузерности, валидности кода и скорости загрузки.
-                    </p>
-                    <p>Увлекаюсь командными видами спорта, люблю читать книги, прогулки на велосипеде, интересуют новые технологий в IT.
-                        Веду свой YouTube канал на тему путешествий.
-                    </p>
+        <div data-tabs class="tabs wow fadeInUp" data-wow-delay="0.5s">
+            <div class="tab">
+                <input type="radio" name="tabgroup" id="tab-1" checked>
+                <label for="tab-1" class="btn-tabs">Minimal deposit 10$</label>
+
+                <div class="tab__content">
+                    <img src="../img/png/img-tab1.png" alt="tab1">
+                    <div class="tab-text">
+                        <h4>Минимальный депозит 10$</h4>
+                        <p>Реальный счет позволит вам зарабатывать реальные деньги.
+                            Для открытия реального счёта необходимо лишь зарегистрироваться и пополнить торговый счет.
+                            Минимальный депозит составляет всего 10 $.
+                            Это реальный шанс увеличить свой доход!
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="expertise">
-            <div class="row">
-                <div class="col-md-4 expertise-title">
-                    <h3>Компетенция</h3>
-                    <p>Моя компетенция в навыках</p>
+            <div class="tab">
+                <input type="radio" name="tabgroup" id="tab-2">
+                <label for="tab-2">Персональный менеджер</label>
+                <div class="tab__content">
+                    <img src="../img/png/img-tab1.png" alt="tab1">
+                    <div class="tab-text">
+                        <h4>Персональный менеджер</h4>
+                        <p>Реальный счет позволит вам зарабатывать реальные деньги.
+                            Для открытия реального счёта необходимо лишь зарегистрироваться и пополнить торговый счет.
+                            Минимальный депозит составляет всего 10 $.
+                            Это реальный шанс увеличить свой доход!
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-8 expertise-text">
-                    <div>
-                        <h3><span>1</span>ПРОДВИНУТЫЙ HTML</h3>
-                        <p>Использую HTML5 долгое время, пользуююсь Bootstrap 3/4 для разметки.
-                            А так же делаю кроссбраузерную верстку и проверку на валидность кода.
+            </div>
+            <div class="tab">
+                <input type="radio" name="tabgroup" id="tab-3">
+                <label for="tab-3">Бесплатное обучение</label>
+                <div class="tab__content">
+                    <img src="../img/png/img-tab1.png" alt="tab1">
+                    <div class="tab-text">
+                        <h4>Бесплатное обучение</h4>
+                        <p>Реальный счет позволит вам зарабатывать реальные деньги.
+                            Для открытия реального счёта необходимо лишь зарегистрироваться и пополнить торговый счет.
+                            Минимальный депозит составляет всего 10 $.
+                            Это реальный шанс увеличить свой доход!
                         </p>
                     </div>
-                    <div>
-                        <h3><span>2</span>ПРОДВИНУТЫЙ CSS</h3>
-                        <p>Использую CSS3 уже несколько лет, пользуююсь препроцессораси Sass, Less.
-                            А так же Flexbox, Grid Css и делаю небольшие анимаций на CSS.
-                        </p>
-                    </div>
-                    <div>
-                        <h3><span>3</span>Photoshop</h3>
-                        <p>Использую Photoshop для проектов с psd файлами и неплохо ориентируюсь в нем.
-                            Чтоб скопировать, нарезать шаблон для дальнейшей верстки.
-                        </p>
-                    </div>
-                    <div>
-                        <h3><span>4</span>Git / Bitbacket</h3>
-                        <p>Использую почстоянно один из этих системой управлением версиями.
-                            Делаю ветки, решаю конфликты и обязательно прописываю в проекте gitignore.
-                        </p>
-                    </div>
-                    <div>
-                        <h3><span>5</span>Trello</h3>
-                        <p>Использую Trello для управлением и постановкой задач как для себя так и для своих коллег.
-                            Очень удобно приложения для комманды и просомтра реализаций той или иной задачи.
-                        </p>
-                    </div>
-                    <div>
-                        <h3><span>6</span>SEO</h3>
-                        <p>Использую SEO для своих небольших проектов. Знаэ как настроить сайт в Google Analitics,
-                            так же для сайта требуется настройка sitemap, robots.txt и ключевых слов на самом сайте.
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="tabgroup" id="tab-4">
+                <label for="tab-4">Круглосуточная поддержка</label>
+                <div class="tab__content">
+                    <img src="../img/png/img-tab1.png" alt="tab1">
+                    <div class="tab-text">
+                        <h4>Круглосуточная поддержка</h4>
+                        <p>Реальный счет позволит вам зарабатывать реальные деньги.
+                            Для открытия реального счёта необходимо лишь зарегистрироваться и пополнить торговый счет.
+                            Минимальный депозит составляет всего 10 $.
+                            Это реальный шанс увеличить свой доход!
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="skills">
-            <div class="row">
-                <div class="col-md-4 skills-title">
-                    <h3>НАВЫКИ</h3>
-                    <p>Прогресс-бары скилов</p>
+        <div class="more-assets wow fadeInUp" data-wow-delay="0.5s">
+            <h3>Более 50 проверенных активов</h3>
+            <div class="assets-icon">
+                <div class="wow fadeInUp" data-wow-delay="0.7s">
+                    <a href="#"><img src="../img/png/badoo.png" alt="badoo"></a>
+                    <a href="#"><img src="../img/png/tesla.png" alt="tesla"></a>
+                    <a href="#"><img src="../img/png/gillet.png" alt="gillet"></a>
+                    <a href="#"><img src="../img/png/coca.png" alt="coca"></a>
+                    <a href="#"><img src="../img/png/netflix.png" alt="netflix"></a>
                 </div>
-
-                <div class="col-md-8 skills-text">
-                    <div>
-                        <p><span id="label-html">1% </span><span>HTML5</span></p>
-                        <div class="progress__bar">
-                            <div id="progress__bar-html"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <p><span id="label-css">1% </span><span>CSS3</span></p>
-                        <div class="progress__bar">
-                            <div id="progress__bar-css"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <p><span id="label-bootstrap">1% </span><span>Bootsatrap 3/4</span></p>
-                        <div class="progress__bar">
-                            <div id="progress__bar-bootstrap"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <p><span id="label-flexbox">1% </span><span>flexbox</span></p>
-                        <div class="progress__bar">
-                            <div id="progress__bar-flexbox"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <p><span id="label-sass">1% </span><span>sass</span></p>
-                        <div class="progress__bar">
-                            <div id="progress__bar-sass"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <p><span id="label-webpack">1% </span><span>Webpack</span></p>
-                        <div class="progress__bar">
-                            <div id="progress__bar-webpack"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <p><span id="label-js">1% </span><span>java script</span></p>
-                        <div class="progress__bar">
-                            <div id="progress__bar-js"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <p><span id="label-jquery">1% </span><span>jquery</span></p>
-                        <div class="progress__bar">
-                            <div id="progress__bar-jquery"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <p><span id="label-vue">1% </span><span>vue.js</span></p>
-                        <div class="progress__bar">
-                            <div id="progress__bar-vue"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <p><span id="label-git">1% </span><span>Git</span></p>
-                        <div class="progress__bar">
-                            <div id="progress__bar-git"></div>
-                        </div>
-                    </div>
+                <div class="wow fadeInUp" data-wow-delay="0.9s">
+                    <a href="#"><img src="../img/png/microsoft.png" alt="microsoft"></a>
+                    <a href="#"><img src="../img/png/disnay.png" alt="disnay"></a>
+                    <a href="#"><img src="../img/png/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="../img/png/google.png" alt="google"></a>
+                    <a href="#"><img src="../img/png/toyota.png" alt="toyota"></a>
                 </div>
 
             </div>
         </div>
-
-        <div class="experiens">
-            <div class="row">
-                <div class="col-md-4 experiens-title">
-                    <h3>ОПЫТ</h3>
-                    <p>Здесь мой опыт работы</p>
-                </div>
-                <div class="col-md-8 experiens-text">
-                    <ul>
-                        <li>
-                            <div class="timeline-point"></div>
-                            <div class="experiens-time">
-                                <span>Ноябрь 2017 – в данное время</span>
-                                <h3>Web studio LP4YOU</h3>
-                                <h6>Front-end developer</h6>
-                                <span>г. Одесса, Украина</span>
-                            </div>
-                            <p>Работа с коммандой разработчиков, с дизайнером и верстка psd макетов.
-                                Тестирование,  рабоат с формами обратной связи, валидация форм и применение валидности, адаптивности и кроссбраузерности.
-                                Проверка проектов на скорость загрузки и на валидность кода.
-                            </p>
-                        </li>
-                        <li>
-                            <div class="timeline-point"></div>
-                            <div class="experiens-time">
-                                <span>Ноябрь 2015 – Сентябрь 2017</span>
-                                <h3>CRMTronic IT-company</h3>
-                                <h6>Старший менеджер компаний</h6>
-                                <span>г. Одесса, Украина</span>
-                            </div>
-                            <p>В мои обязаности входила работа с клинетами, связь с ними, клиентская поддержка,
-                                работа с коммандой программитстов тестирорвание приложения и выставление багов в Redmain.
-                            </p>
-                        </li>
-                        <li>
-                            <div class="timeline-point"></div>
-                            <div class="experiens-time">
-                                <span>Апрель 2015 - Октябрь 2015</span>
-                                <h3>ТОО «ГеоПроектСтрой»</h3>
-                                <h6>Инженер производственно-технического отдела</h6>
-                                <span>г. Астана, Казахстан</span>
-                            </div>
-                            <p>В мои обязаности входила работа с сметной документацией ее анализом,
-                                связь с поставщиками товара, расчет стоимости, пролаживание маршрута и проверка верности проектно сметной документаций.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
+        <div class="mobile-apps  wow fadeInUp" data-wow-delay="0.3s">
+            <div class="mobile-apps-text ru-apps-text">
+                <h3>Мобильные приложения </h3>
+                <p>Торговля на нескольких графиках, технический анализ, история котировок и многое другое.
+                    Все, что вам нужно на платформе, доступно
+                    на любом устройстве по вашему выбору.
+                </p>
+            </div>
+            <img src="../img/png/mob1.png" height="650" class="mob1"  alt="mob1">
+            <img src="../img/png/mob2.png" height="670" class="mob2" alt="mob2">
+        </div>
+        <div class="binotrade  wow fadeInUp" data-wow-delay="0.3s">
+            <h3>Binotrade.com — бинарный опцион с личным помощником</h3>
+            <div class="binotrade-text">
+                <p>Binotrade - это торговая платформа, удобный инструмент, который предлагает не только возможность заработать с помощью торговли бинарными опционами, но и предоставляет профессиональный клиентский сервис. Сразу после регистрации на Binotrade.com, каждый клиент получает личного консультанта.</p>
+                <p>Вам нужен совет по торговле активами или вы не можете подобрать подходящую торговую стратегию? Обратитесь к вашему личному консультанту, который поможет вам в решении вопроса. Вам не нужен статус VIP-клиента, чтобы пользоваться квалифицированным клиентским сервисом!</p>
             </div>
         </div>
-
-        <div class="education">
-            <div class="row">
-                <div class="col-md-4 education-title">
-                    <h3>Образование</h3>
-                    <p>А вот и мое образование</p>
-                </div>
-                <div class="col-md-8 education-text">
-                    <ul>
-                        <li class="education-last">
-                            <div class="timeline-point"></div>
-                            <div class="experiens-time">
-                                <span>2016 – 2017</span>
-                                <h3>Main Academy</h3>
-                                <h6>Front-end developer </h6>
-                                <span>г. Одесса, Украина</span>
-                            </div>
-
-                            <p>Front-end developer</p>
-                        </li>
-                        <li>
-                            <div class="timeline-point"></div>
-                            <div class="experiens-time">
-                                <span>2006-2010</span>
-                                <h3>ОГаса</h3>
-                                <h6>Специалист</h6>
-                                <span>г. Одесса, Украина</span>
-                            </div>
-                            <p>Конструирование в промышленном и гражданском строительстве</p>
-                        </li>
-                        <li>
-                            <div class="timeline-point"></div>
-                            <div class="experiens-time">
-                                <span>2002-2006</span>
-                                <h3>БДГАТ</h3>
-                                <h6>Младший специалист</h6>
-                                <span>г. Белгород - Днестровский, Украина</span>
-                            </div>
-                            <p>Строительство и эксплуатация зданий и сооружений.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="certificate">
-            <div class="row">
-                <div class="col-md-4 certificate-title">
-                    <h3>Сертификаты</h3>
-                    <p>Интересное время обучения</p>
-                </div>
-                <div class="col-md-8 certificate-text">
-                    <div class="wow zoomIn" data-wow-delay="0.7s">
-                        <hr align="left">
-                        <h3>Main Academy 2016-2017</h3>
-                        <div class="portfolio-images">
-                            <a href="https://drive.google.com/file/d/0B0GvuK1X-ta1RzdJV1pva0FXdnc/view" title="Click me" >
-                                <img src="../img/png/main-academy.jpg" alt="certification"></a>
-                            <p>Мой сертификат за прохождение курса по Front-end разработке</p>
-                        </div>
-                    </div>
-                    <div class="wow zoomIn" data-wow-delay="0.7s">
-                        <hr align="left">
-                        <h3>Data Art IT School 2017</h3>
-                        <div class="portfolio-images">
-                            <a href="https://drive.google.com/file/d/1N1Yy8stRe1qwYoCtl0xJb3wjIa4K5gKZ/view" title="Click me" >
-                                <img src="../img/png/data-art.jpg" alt="certification"></a>
-                            <p>Мой сертификат за прохождение курса по общему курсу в программирование</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="portfolio">
-            <div class="row">
-                <div class="col-md-4 portfolio-title">
-                    <h3>Портфолио</h3>
-                    <p>Здесь мои проекты</p>
-                </div>
-
-                <div class="col-md-8 portfolio-text">
-                    <div class="portfolio-images wow zoomIn" data-wow-delay="0.7s">
-                        <div class="effect">
-                            <img src="../img/png/local2.jpg" alt="cайт">
-                            <div class="caption">
-                                <h4>Localcoins</h4>
-                                <p>Платформа для продажи/покупки криптовалют</p>
-                                <a class="btn" href="https://localcoins24.com">Перейти на сайт</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-images wow zoomIn" data-wow-delay="0.7s">
-                        <div class="effect">
-                            <img src="../img/png/sberforex2.jpg" alt="сайт">
-                            <div class="caption">
-                                <h4>sberforex</h4>
-                                <p>Платформа для вкладывания инвестиций в акций</p>
-                                <a class="btn" href="https://sberforex.com/">Перейти на сайт</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-images wow zoomIn" data-wow-delay="0.7s">
-                        <div class="effect">
-                            <img src="../img/png/propbitcoin2.jpg" alt="сайт">
-                            <div class="caption">
-                                <h4>propbitcoin</h4>
-                                <p>Проект для того как стать трейдером и управлять своим капиталом</p>
-                                <a class="btn" href="http://lp4you.freedomain.thehost.com.ua/propbitcoin-html/index.html">Перейти на сайт</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-images wow zoomIn" data-wow-delay="0.7s">
-                        <div class="effect">
-                            <img src="../img/png/premion2.jpg" alt="сайт">
-                            <div class="caption">
-                                <h4>Premion</h4>
-                                <p>Проект для услуг строительства и продажи кровли</p>
-                                <a class="btn" href="http://lp4you.freedomain.thehost.com.ua/premion-html/#">Перейти на сайт</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-images wow zoomIn" data-wow-delay="0.7s">
-                        <div class="effect">
-                            <img src="../img/png/cinq2.jpg" alt="сайт">
-                            <div class="caption">
-                                <h4>SolarDigital</h4>
-                                <p>Сайт для рекламы електронного оборудывания</p>
-                                <a class="btn" href="http://lp4you.freedomain.thehost.com.ua/SolarDigital/">Перейти на сайт</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-images wow zoomIn" data-wow-delay="0.7s">
-                        <div class="effect">
-                            <img src="../img/png/checking2.jpg" alt="сайт">
-                            <div class="caption">
-                                <h4>checkinguru</h4>
-                                <p>Сайт для аэрофлота, предлагает бронировать места.</p>
-                                <a class="btn" href="http://lp4you.freedomain.thehost.com.ua/checkinguru/">Перейти на сайт</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-images wow zoomIn" data-wow-delay="0.7s">
-                        <div class="effect">
-                            <img src="../img/png/kemo2.jpg" alt="сайт">
-                            <div class="caption">
-                                <h4>kemo</h4>
-                                <p>Сайт для религиозного события проходящее в Киеве</p>
-                                <a class="btn" href="http://lp4you.freedomain.thehost.com.ua/kemo/">Перейти на сайт</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-images wow zoomIn" data-wow-delay="0.7s">
-                        <div class="effect">
-                            <img src="../img/png/plasma2.jpg" alt="сайт">
-                            <div class="caption">
-                                <h4>plasma</h4>
-                                <p>Сайт на медецинскую тему с большим спектром услуг</p>
-                                <a class="btn" href="http://lp4you.freedomain.thehost.com.ua/plasma/">Перейти на сайт</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-images wow zoomIn" data-wow-delay="0.7s">
-                        <div class="effect">
-                            <img src="../img/png/surrogat2.jpg" alt="сайт">
-                            <div class="caption">
-                                <h4>dreams</h4>
-                                <p>Сайт с предложением услуг суррогатного материнства</p>
-                                <a class="btn" href="http://lp4you.freedomain.thehost.com.ua/dreams/index.html" >Перейти на сайт</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-images wow zoomIn" data-wow-delay="0.7s">
-                        <div class="effect">
-                            <img src="../img/png/opsol2.jpg" alt="сайт">
-                            <div class="caption">
-                                <h4>opsol</h4>
-                                <p>Платформа предлагает продажу топлива для оптовых покупателей</p>
-                                <a class="btn" href="https://opsol.com.ua/">Перейти на сайт</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-images wow zoomIn" data-wow-delay="0.7s">
-                        <div class="effect">
-                            <img src="../img/png/limestone2.jpg" alt="сайт">
-                            <div class="caption">
-                                <h4>limestone</h4>
-                                <p>Лендинг предлагает услуги строитеьства из пильного известняка</p>
-                                <a class="btn" href="http://lp4you.freedomain.thehost.com.ua/limestone-front/">Перейти на сайт</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-images wow zoomIn" data-wow-delay="0.7s">
-                        <div class="effect">
-                            <img src="../img/png/automotive2.jpg" alt="сайт">
-                            <div class="caption">
-                                <h4>auto motive</h4>
-                                <p>Лендинг предлагает услуги авто сервиса</p>
-                                <a class="btn" href="http://levko.zzz.com.ua/auto_motive/#">Перейти на сайт</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="contact">
-            <div class="row">
-                <div class="col-md-4 contact-title">
-                    <h3>Контакты</h3>
-                    <p>Позвони мен, может быть</p>
-                </div>
-                <div class="col-md-8 contact-text">
-                    <ul class="d-flex">
-                        <li>
-                            <h6>Локация</h6>
-                            <p>г.Одесса, Украина</p>
-                        </li>
-                        <li>
-                            <h6>Телефон</h6>
-                            <p><a href="tel:+380978544985"> 38 (097) 85-44-985</a></p>
-                        </li>
-                        <li>
-                            <h6>Email</h6>
-                            <p><a href="mailto:slevko88@gmail.com"> slevko88@gmail.com</a></p>
-                        </li>
-                    </ul>
-                    <hr>
-                    <div class="footer-social">
-                        <h1 class="wow fadeInUp" data-wow-delay="0.5s">Вячеслав <br><span>Левко</span></h1>
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/viacheslav-levko-7b7472138/"  class="wow fadeInUp" data-wow-delay="0.7s"><svg class="transition"><use xlink:href="../img/svg/svg.svg#linkedin"></use></svg></a>
-                            <a href="skype:https://join.skype.com/invite/bM7zzF5qm784"  class="wow fadeInUp" data-wow-delay="0.8s"><svg class="transition"><use xlink:href="../img/svg/svg.svg#skype"></use></svg></a>
-                            <a href="viber://chat?number=+380636748159" class="wow fadeInUp" data-wow-delay="0.9s"><svg class="transition"><use xlink:href="../img/svg/svg.svg#viber"></use></svg></a>
-                            <a href="https://www.facebook.com/profile.php?id=100009540591794"  class="wow fadeInUp" data-wow-delay="1s"><svg class="transition"><use xlink:href="../img/svg/svg.svg#facebook"></use></svg></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
     </main>
 
-</div>
-<!--wrapper-->
+</div><!--END wrapper-->
 
+<footer  class="wow fadeInUp" data-wow-delay="0.5s">
+    <ul>
+        <li><a href="#">Правовая информация</a></li>
+        <li><a href="#">Положения и условия</a></li>
+        <li><a href="#">Политика по борьбе с отмыванием денег</a></li>
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Политика Проведения платежей</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">Трейдерам</a></li>
+        <li><a href="#">Активы</a></li>
+        <li><a href="#">Архив котеровок</a></li>
+        <li><a href="#">Частые вопросы</a></li>
+        <li><a href="#">Обучение</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+    <div class="appstore">
+        <a href="#"><img src="../img/svg/appstore.svg" alt="app-store"></a>
+        <a href="#"><img src="../img/svg/google-play.svg" alt="google-play"></a>
+    </div>
+    <div class="soc-icons">
+        <ul>
+            <li><a href="#"><img src="../img/svg/facebook.svg" class="wow fadeInRight" data-wow-delay="0.8s" alt="facebook"></a></li>
+            <li><a href="#"><img src="../img/svg/vk.svg" class="wow fadeInRight" data-wow-delay="1s" alt="vk"></a></li>
+            <li><a href="#"><img src="../img/svg/twetter.svg" class="wow fadeInRight" data-wow-delay="1.2s" alt="twetter"></a></li>
+            <li><a href="#"><img src="../img/svg/gplus.svg" class="wow fadeInRight" data-wow-delay="1.4s" alt="gplus"></a></li>
+        </ul>
+        <a href="http://solardigital.com.ua/" class="footer-solar wow fadeInRight" data-wow-delay="1.2s">
+            <p>Designed in</p><img src="../img/png/solar.png" alt="solar">
+        </a>
+    </div>
+</footer>
 
 <!--bundle.js-->
-<script async src="../bundle/scripts/all.js"></script>
+<script src="../js/html5shiv.min.js"></script>
+<script src="../js/wow.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/select2.min.js"></script>
+<script src="../js/lib-init.js"></script>
 
 </body>
 </html>

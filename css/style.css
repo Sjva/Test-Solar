@@ -223,7 +223,7 @@ header {
 /*------------END header--------*/
 main {
   background-color: #fbfcfd;
-  padding: 300px 0 0 0; }
+  padding: 375px 0 0 0; }
 
 /*------------Main--------*/
 .tabs {
@@ -406,6 +406,14 @@ footer ul li a:hover {
   margin-top: 5px;
   overflow: hidden; }
 
-/*--------------------------media-------------------------------------------------------------------------------------*/
+/*--------------------------RU version site-------------------------------------------------------------------------------------*/
+.ru-header-polis {
+  margin-top: 208px; }
+
+.ru-header-title h1 {
+  margin-top: 172px; }
+
+.ru-apps-text {
+  margin: 185px 0 0 0; }
 
 /*# sourceMappingURL=style.css.map */
