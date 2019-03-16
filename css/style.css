@@ -67,22 +67,23 @@ input:-webkit-autofill {
   padding: 0; }
 
 body {
-  font-family: Qanelas-Regular, sans-serif; }
+  font-family: Qanelas-Regular, sans-serif;
+  width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  overflow-x: hidden; }
 
 #wrapper {
   min-width: 320px;
   max-width: 100%;
   min-height: 100%;
-  height: 100%;
-  margin: 0 auto; }
+  height: 100%; }
 
 /*------------header--------*/
 header {
   background: url(../img/png/bg-header3.png) 100% 100% no-repeat, url(../img/png/bg-header2.png) 100% 100% no-repeat, url(../img/png/bg-header1.png) 100% 100% no-repeat, url("../img/png/bg-header.png") 100% 100% no-repeat;
   background-size: cover;
-  width: 1440px;
   height: 901.2px;
-  margin: 0 auto;
   padding: 33px 41px 0 52px; }
 
 .header-reg {
@@ -146,7 +147,7 @@ header {
 .vert-line {
   display: inline-block;
   font-family: Qanelas-Medium, sans-serif;
-  background-image: linear-gradient(210deg, #1acbfd, #345aff);
+  background-color: #1acbfd;
   width: 1px;
   height: 30px;
   margin: -5px 0 -7px 0; }
@@ -179,11 +180,15 @@ header {
   text-align: center;
   font-size: 18px;
   padding: 19px 0 16px;
-  margin-bottom: 223px;
+  transition: all 0.5s ease-out;
   color: #fff;
   border-radius: 4px;
   box-shadow: 0 8px 14px 0 rgba(0, 107, 206, 0.3);
   background-image: linear-gradient(188deg, #00f9ff, #00d0f1); }
+
+.header-title .start-trading:hover {
+  color: #1e2945;
+  background-image: linear-gradient(90deg, #00f9ff, #00d0f1); }
 
 .header-polis {
   display: block;
@@ -191,7 +196,8 @@ header {
   height: 366px;
   border-radius: 6px;
   box-shadow: 0 40px 40px 0 rgba(0, 0, 0, 0.03);
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  margin-top: 250px; }
 
 .header-polis-item {
   width: 520px;
@@ -215,6 +221,191 @@ header {
   flex-wrap: nowrap; }
 
 /*------------END header--------*/
+main {
+  background-color: #fbfcfd;
+  padding: 300px 0 0 0; }
+
+/*------------Main--------*/
+.tabs {
+  clear: both;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto 0;
+  /* you can either manually set a min-height here or do it via JS ---> */ }
+
+.tab {
+  float: left; }
+
+.tab label {
+  font-family: Qanelas-Regular, sans-serif;
+  position: relative;
+  top: 0;
+  left: 209px;
+  cursor: pointer;
+  color: #000;
+  height: 50px;
+  background-color: #ffffff;
+  padding: 15px 78px; }
+
+.tab label:first-child {
+  border-radius: 4px 4px 0 0; }
+
+.tab [type=radio] {
+  display: none; }
+
+.tab__content {
+  position: relative;
+  top: 74px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.2s cubic-bezier(0.42, 0, 0.34, 1.01);
+  opacity: 0; }
+
+[type=radio]:checked ~ label {
+  border-bottom: 2px solid #2e73fe;
+  color: #2e73fe;
+  z-index: 2; }
+
+[type=radio]:checked ~ label ~ .tab__content {
+  z-index: 1;
+  opacity: 1; }
+
+.tab-text {
+  position: absolute;
+  top: 125px;
+  left: 203px;
+  display: block;
+  width: 440px;
+  height: 170px; }
+
+.tab-text h4 {
+  font-family: Qanelas-Regular, sans-serif;
+  font-size: 40px;
+  color: #1e2945; }
+
+.tab-text p {
+  font-family: Qanelas-Regular, sans-serif;
+  font-size: 18px;
+  color: #1e2945;
+  line-height: 29px; }
+
+.more-assets {
+  background: #fff;
+  margin: 100px 70px;
+  padding: 151px 167px; }
+
+.more-assets h3 {
+  font-family: Qanelas-Regular, sans-serif;
+  font-size: 40px;
+  line-height: 1.25;
+  text-align: center;
+  color: #1e2945; }
+
+.assets-icon div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  margin: 15px 0 20px; }
+
+.mobile-apps {
+  font-family: Qanelas-Regular, sans-serif;
+  background: url("../img/png/bg-mob-apps.png") 0 100% no-repeat;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding: 0 204px 0 142px;
+  margin-top: 283.6px;
+  height: 700px; }
+
+.mobile-apps-text {
+  width: 400px;
+  height: 170px;
+  margin: 245.2px 0 0 0; }
+
+.mobile-apps-text h3 {
+  font-size: 40px;
+  line-height: 39px;
+  color: #ffffff;
+  margin-bottom: 15px; }
+
+.mobile-apps-text p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff; }
+
+.mob1 {
+  margin: -81px -20px 0 56px; }
+
+.mob2 {
+  margin-top: -200px; }
+
+.binotrade {
+  margin: 213px 242px 0 79px; }
+
+.binotrade h3 {
+  font-family: Qanelas-Medium, sans-serif;
+  font-size: 40px;
+  color: #1e2945;
+  margin-bottom: 35px; }
+
+.binotrade-text {
+  display: flex;
+  justify-content: space-between; }
+
+.binotrade p {
+  font-family: Qanelas-Regular, sans-serif;
+  width: 498px;
+  height: 130px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #1e2945; }
+
+.binotrade p:first-child {
+  margin-right: 65px; }
+
+/*------------END Main--------*/
+footer {
+  background: url("../img/png/bg-footer.png") 100% 100% no-repeat;
+  padding: 258px 88px 47px 76px;
+  background-color: #fbfcfd;
+  display: flex;
+  justify-content: space-between; }
+
+footer ul li {
+  list-style: none;
+  padding: 2.5px 0; }
+
+footer ul li a {
+  font-family: Qanelas-Regular, sans-serif;
+  font-size: 15px;
+  line-height: 1.73;
+  color: #1e2945;
+  text-decoration: none; }
+
+footer ul li a:hover {
+  color: #1acbfd; }
+
+.soc-icons ul li {
+  display: inline-block; }
+
+.footer-solar {
+  text-decoration: none;
+  font-family: CircularStd-Book, sans-serif;
+  font-size: 10px;
+  line-height: 23px;
+  color: #93b2dc; }
+
+.footer-solar img {
+  float: right;
+  margin: -27px -5px; }
+
+.footer-solar p {
+  margin-top: 5px;
+  overflow: hidden; }
+
 /*--------------------------media-------------------------------------------------------------------------------------*/
 
 /*# sourceMappingURL=style.css.map */
