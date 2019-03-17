@@ -70,8 +70,7 @@ body {
   font-family: Qanelas-Regular, sans-serif;
   width: 1440px;
   height: auto;
-  margin: 0 auto;
-  overflow-x: hidden; }
+  margin: 0 auto; }
 
 #wrapper {
   min-width: 320px;
@@ -106,7 +105,11 @@ header {
   line-height: 17px;
   border: none;
   border-left: 1px solid #1acbfd;
-  font-size: 16px; }
+  font-size: 16px;
+  transition: all 0.5s ease-out; }
+
+.select2-container--default .select2-selection--single .select2-selection__rendered:hover {
+  color: #1acbfd; }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
   padding: 0 36px 0 12px;
