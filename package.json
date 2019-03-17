@@ -1,0 +1,24 @@
+{
+  "name": "test-solardigital",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sjva/Test-Solar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sjva/Test-Solar/issues"
+  },
+  "homepage": "https://github.com/Sjva/Test-Solar#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-uglyfly": "^1.4.2"
+  }
+}

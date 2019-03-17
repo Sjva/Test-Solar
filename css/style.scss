@@ -114,7 +114,7 @@ header{
   background: url(../img/png/bg-header3.png) 100% 100% no-repeat,
   url(../img/png/bg-header2.png) 100% 100% no-repeat,
   url(../img/png/bg-header1.png)  100% 100% no-repeat,
-  url("../img/png/bg-header.png") 100% 100% no-repeat;
+  url("../img/png/bg-header.jpg") 100% 100% no-repeat;
   background-size: cover;
   height: 901.2px;
   padding: 33px 41px 0 52px;
@@ -363,7 +363,7 @@ main{
   flex-wrap: nowrap;
   padding: 0 204px 0 142px;
   margin-top: 283.6px;
-  height: 700px;
+  height: 702px;
 }
 .mobile-apps-text{
   width: 400px;
@@ -465,4 +465,8 @@ footer ul li a:hover{
 }
 .ru-apps-text {
   margin: 185px 0 0 0;
+}
+//delete name host
+.cbalink{
+  display: none;
 }
